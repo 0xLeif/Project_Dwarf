@@ -9,8 +9,8 @@ import java.util.ArrayList;
 public class Map {
 	private ArrayList<String> map = new ArrayList<String>();
 	
-	public Map(String fileName) throws IOException{
-		File mapFile = new File(fileName);
+	public Map(int i) throws IOException{
+		File mapFile = new File("../Project_Dwarf/src/source/maps/" + i + ".txt");
 		FileReader fr = new FileReader(mapFile);
 		BufferedReader br = new BufferedReader(fr);
 		String line = "";
